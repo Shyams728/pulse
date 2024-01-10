@@ -1,0 +1,601 @@
+year,quarter,entity_type,entity_name,registeredUsers
+2018,1,states,maharashtra,6106994
+2018,1,states,uttar pradesh,4694250
+2018,1,states,karnataka,3717763
+2018,1,states,andhra pradesh,3336450
+2018,1,states,telangana,3315560
+2018,1,states,rajasthan,3158202
+2018,1,states,gujarat,2690048
+2018,1,states,west bengal,2604789
+2018,1,states,madhya pradesh,2553603
+2018,1,states,bihar,2133804
+2018,1,districts,bengaluru urban,1922368
+2018,1,districts,pune,1211643
+2018,1,districts,jaipur,900773
+2018,1,districts,mumbai suburban,719300
+2018,1,districts,hyderabad,655175
+2018,1,districts,rangareddy,635175
+2018,1,districts,thane,631864
+2018,1,districts,ahmadabad,572811
+2018,1,districts,medchal malkajgiri,549429
+2018,1,districts,visakhapatnam,497187
+2018,1,pincodes,201301,114625
+2018,1,pincodes,500072,105012
+2018,1,pincodes,560068,98487
+2018,1,pincodes,110059,95496
+2018,1,pincodes,110092,83600
+2018,1,pincodes,122001,82656
+2018,1,pincodes,560037,75304
+2018,1,pincodes,395006,72275
+2018,1,pincodes,800001,71092
+2018,1,pincodes,302012,68098
+2018,2,states,maharashtra,8222371
+2018,2,states,uttar pradesh,6442554
+2018,2,states,karnataka,5030665
+2018,2,states,andhra pradesh,4402540
+2018,2,states,telangana,4260115
+2018,2,states,rajasthan,4212964
+2018,2,states,west bengal,3833795
+2018,2,states,gujarat,3565825
+2018,2,states,madhya pradesh,3441662
+2018,2,states,bihar,3005872
+2018,2,districts,bengaluru urban,2553312
+2018,2,districts,pune,1592293
+2018,2,districts,jaipur,1182983
+2018,2,districts,mumbai suburban,957633
+2018,2,districts,thane,861292
+2018,2,districts,hyderabad,842483
+2018,2,districts,rangareddy,804959
+2018,2,districts,ahmadabad,751746
+2018,2,districts,medchal malkajgiri,696211
+2018,2,districts,surat,652372
+2018,2,pincodes,201301,151073
+2018,2,pincodes,500072,129543
+2018,2,pincodes,560068,128921
+2018,2,pincodes,110059,124901
+2018,2,pincodes,110092,108175
+2018,2,pincodes,122001,107275
+2018,2,pincodes,800001,94711
+2018,2,pincodes,395006,94500
+2018,2,pincodes,560037,93771
+2018,2,pincodes,302012,89071
+2018,3,states,maharashtra,10435033
+2018,3,states,uttar pradesh,8096483
+2018,3,states,karnataka,6372649
+2018,3,states,andhra pradesh,5427617
+2018,3,states,rajasthan,5175453
+2018,3,states,telangana,5138501
+2018,3,states,west bengal,4851740
+2018,3,states,gujarat,4433183
+2018,3,states,madhya pradesh,4309309
+2018,3,states,tamil nadu,3900177
+2018,3,districts,bengaluru urban,3167597
+2018,3,districts,pune,1974138
+2018,3,districts,jaipur,1438305
+2018,3,districts,mumbai suburban,1218632
+2018,3,districts,thane,1104206
+2018,3,districts,hyderabad,1024241
+2018,3,districts,rangareddy,963186
+2018,3,districts,ahmadabad,919252
+2018,3,districts,medchal malkajgiri,828425
+2018,3,districts,surat,808005
+2018,3,pincodes,201301,188664
+2018,3,pincodes,110059,156028
+2018,3,pincodes,500072,152034
+2018,3,pincodes,560068,151862
+2018,3,pincodes,110092,136676
+2018,3,pincodes,122001,130847
+2018,3,pincodes,395006,113391
+2018,3,pincodes,302012,107088
+2018,3,pincodes,560037,106572
+2018,3,pincodes,800001,106255
+2018,4,states,maharashtra,13381602
+2018,4,states,uttar pradesh,10341964
+2018,4,states,karnataka,8315802
+2018,4,states,andhra pradesh,6857409
+2018,4,states,telangana,6529679
+2018,4,states,rajasthan,6358738
+2018,4,states,west bengal,6279278
+2018,4,states,gujarat,5579040
+2018,4,states,madhya pradesh,5365442
+2018,4,states,tamil nadu,5199878
+2018,4,districts,bengaluru urban,4126734
+2018,4,districts,pune,2498852
+2018,4,districts,jaipur,1733893
+2018,4,districts,mumbai suburban,1578487
+2018,4,districts,thane,1473811
+2018,4,districts,hyderabad,1336872
+2018,4,districts,rangareddy,1217664
+2018,4,districts,ahmadabad,1212636
+2018,4,districts,medchal malkajgiri,1056739
+2018,4,districts,surat,998807
+2018,4,pincodes,201301,250205
+2018,4,pincodes,110059,206537
+2018,4,pincodes,560068,201605
+2018,4,pincodes,110092,177133
+2018,4,pincodes,500072,175163
+2018,4,pincodes,122001,163556
+2018,4,pincodes,560037,137280
+2018,4,pincodes,800001,134254
+2018,4,pincodes,110086,133412
+2018,4,pincodes,110085,132600
+2019,1,states,maharashtra,16284451
+2019,1,states,uttar pradesh,12458661
+2019,1,states,karnataka,10266174
+2019,1,states,andhra pradesh,8283019
+2019,1,states,telangana,7963425
+2019,1,states,rajasthan,7712204
+2019,1,states,west bengal,7449425
+2019,1,states,gujarat,6652536
+2019,1,states,madhya pradesh,6414403
+2019,1,states,tamil nadu,6296303
+2019,1,districts,bengaluru urban,5003207
+2019,1,districts,pune,3038402
+2019,1,districts,jaipur,2060175
+2019,1,districts,mumbai suburban,1901210
+2019,1,districts,thane,1834051
+2019,1,districts,hyderabad,1638436
+2019,1,districts,rangareddy,1470874
+2019,1,districts,ahmadabad,1450100
+2019,1,districts,medchal malkajgiri,1279531
+2019,1,districts,surat,1180819
+2019,1,pincodes,201301,301260
+2019,1,pincodes,110059,246566
+2019,1,pincodes,560068,237280
+2019,1,pincodes,500072,221180
+2019,1,pincodes,110092,206805
+2019,1,pincodes,122001,194366
+2019,1,pincodes,110086,158267
+2019,1,pincodes,560078,157977
+2019,1,pincodes,395006,157558
+2019,1,pincodes,560076,157367
+2019,2,states,maharashtra,18776975
+2019,2,states,uttar pradesh,14316349
+2019,2,states,karnataka,11968087
+2019,2,states,andhra pradesh,9389003
+2019,2,states,telangana,9046007
+2019,2,states,rajasthan,8783935
+2019,2,states,west bengal,8612795
+2019,2,states,gujarat,7574645
+2019,2,states,tamil nadu,7429609
+2019,2,states,madhya pradesh,7301172
+2019,2,districts,bengaluru urban,5694165
+2019,2,districts,pune,3514081
+2019,2,districts,jaipur,2290462
+2019,2,districts,mumbai suburban,2151657
+2019,2,districts,thane,2118406
+2019,2,districts,hyderabad,1856926
+2019,2,districts,ahmadabad,1656341
+2019,2,districts,rangareddy,1651300
+2019,2,districts,medchal malkajgiri,1428880
+2019,2,districts,surat,1338584
+2019,2,pincodes,201301,336709
+2019,2,pincodes,110059,274593
+2019,2,pincodes,560068,263531
+2019,2,pincodes,500072,242007
+2019,2,pincodes,110092,228546
+2019,2,pincodes,122001,217913
+2019,2,pincodes,421302,182371
+2019,2,pincodes,395006,180042
+2019,2,pincodes,560078,178837
+2019,2,pincodes,110086,177199
+2019,3,states,maharashtra,21313081
+2019,3,states,uttar pradesh,16044607
+2019,3,states,karnataka,13635075
+2019,3,states,andhra pradesh,10458693
+2019,3,states,telangana,10090557
+2019,3,states,rajasthan,9797304
+2019,3,states,west bengal,9643222
+2019,3,states,gujarat,8429299
+2019,3,states,tamil nadu,8428835
+2019,3,states,madhya pradesh,8180664
+2019,3,districts,bengaluru urban,6383771
+2019,3,districts,pune,4004991
+2019,3,districts,jaipur,2520933
+2019,3,districts,mumbai suburban,2407754
+2019,3,districts,thane,2396815
+2019,3,districts,hyderabad,2071673
+2019,3,districts,ahmadabad,1848860
+2019,3,districts,rangareddy,1826019
+2019,3,districts,medchal malkajgiri,1572320
+2019,3,districts,surat,1481391
+2019,3,pincodes,201301,369425
+2019,3,pincodes,110059,300007
+2019,3,pincodes,560068,289417
+2019,3,pincodes,500072,261019
+2019,3,pincodes,110092,248727
+2019,3,pincodes,122001,239679
+2019,3,pincodes,421302,208109
+2019,3,pincodes,395006,198132
+2019,3,pincodes,110086,194575
+2019,3,pincodes,800001,194197
+2019,4,states,maharashtra,23745297
+2019,4,states,uttar pradesh,17949542
+2019,4,states,karnataka,15385416
+2019,4,states,andhra pradesh,11757883
+2019,4,states,telangana,11220691
+2019,4,states,rajasthan,10925031
+2019,4,states,west bengal,10885058
+2019,4,states,tamil nadu,9620493
+2019,4,states,gujarat,9323799
+2019,4,states,madhya pradesh,9165241
+2019,4,districts,bengaluru urban,7016836
+2019,4,districts,pune,4416899
+2019,4,districts,jaipur,2746860
+2019,4,districts,thane,2638051
+2019,4,districts,mumbai suburban,2630360
+2019,4,districts,hyderabad,2283903
+2019,4,districts,ahmadabad,2015947
+2019,4,districts,rangareddy,2001437
+2019,4,districts,medchal malkajgiri,1714832
+2019,4,districts,north twenty four parganas,1638605
+2019,4,pincodes,201301,398548
+2019,4,pincodes,110059,320535
+2019,4,pincodes,560068,313673
+2019,4,pincodes,500072,279498
+2019,4,pincodes,110092,264380
+2019,4,pincodes,122001,258880
+2019,4,pincodes,421302,243170
+2019,4,pincodes,560078,218317
+2019,4,pincodes,395006,214322
+2019,4,pincodes,560076,211683
+2020,1,states,maharashtra,26168390
+2020,1,states,uttar pradesh,20136256
+2020,1,states,karnataka,17016980
+2020,1,states,andhra pradesh,13022060
+2020,1,states,telangana,12306860
+2020,1,states,rajasthan,12142053
+2020,1,states,west bengal,11960822
+2020,1,states,tamil nadu,10872368
+2020,1,states,gujarat,10259843
+2020,1,states,madhya pradesh,10151371
+2020,1,districts,bengaluru urban,7564577
+2020,1,districts,pune,4802397
+2020,1,districts,jaipur,2966508
+2020,1,districts,thane,2878073
+2020,1,districts,mumbai suburban,2843378
+2020,1,districts,hyderabad,2483843
+2020,1,districts,ahmadabad,2185983
+2020,1,districts,rangareddy,2166829
+2020,1,districts,medchal malkajgiri,1845599
+2020,1,districts,north twenty four parganas,1789973
+2020,1,pincodes,201301,425915
+2020,1,pincodes,110059,342152
+2020,1,pincodes,560068,334481
+2020,1,pincodes,500072,296003
+2020,1,pincodes,110092,280039
+2020,1,pincodes,122001,277400
+2020,1,pincodes,421302,270275
+2020,1,pincodes,560078,234102
+2020,1,pincodes,395006,230047
+2020,1,pincodes,110086,226703
+2020,2,states,maharashtra,28765086
+2020,2,states,uttar pradesh,22498519
+2020,2,states,karnataka,18655366
+2020,2,states,andhra pradesh,14319675
+2020,2,states,rajasthan,13563201
+2020,2,states,telangana,13378191
+2020,2,states,west bengal,13222022
+2020,2,states,tamil nadu,12150786
+2020,2,states,gujarat,11392657
+2020,2,states,madhya pradesh,11374423
+2020,2,districts,bengaluru urban,8028070
+2020,2,districts,pune,5144688
+2020,2,districts,jaipur,3182014
+2020,2,districts,thane,3135101
+2020,2,districts,mumbai suburban,3060916
+2020,2,districts,hyderabad,2653534
+2020,2,districts,ahmadabad,2384154
+2020,2,districts,rangareddy,2313748
+2020,2,districts,north twenty four parganas,1966125
+2020,2,districts,medchal malkajgiri,1963353
+2020,2,pincodes,201301,445271
+2020,2,pincodes,110059,365614
+2020,2,pincodes,560068,351484
+2020,2,pincodes,500072,309469
+2020,2,pincodes,421302,298762
+2020,2,pincodes,110092,295000
+2020,2,pincodes,122001,293479
+2020,2,pincodes,560078,247869
+2020,2,pincodes,110086,246312
+2020,2,pincodes,395006,245129
+2020,3,states,maharashtra,31409513
+2020,3,states,uttar pradesh,24838116
+2020,3,states,karnataka,20487550
+2020,3,states,andhra pradesh,15692405
+2020,3,states,rajasthan,14969412
+2020,3,states,telangana,14590882
+2020,3,states,west bengal,14448366
+2020,3,states,tamil nadu,13643451
+2020,3,states,madhya pradesh,12564224
+2020,3,states,gujarat,12467847
+2020,3,districts,bengaluru urban,8611452
+2020,3,districts,pune,5546002
+2020,3,districts,jaipur,3433167
+2020,3,districts,thane,3401853
+2020,3,districts,mumbai suburban,3304696
+2020,3,districts,hyderabad,2875965
+2020,3,districts,ahmadabad,2580178
+2020,3,districts,rangareddy,2495699
+2020,3,districts,north twenty four parganas,2143943
+2020,3,districts,medchal malkajgiri,2111567
+2020,3,pincodes,201301,472490
+2020,3,pincodes,110059,393571
+2020,3,pincodes,560068,373446
+2020,3,pincodes,421302,328833
+2020,3,pincodes,500072,328018
+2020,3,pincodes,110092,314384
+2020,3,pincodes,122001,314031
+2020,3,pincodes,110086,267186
+2020,3,pincodes,560078,265627
+2020,3,pincodes,121004,261230
+2020,4,states,maharashtra,34432631
+2020,4,states,uttar pradesh,27249134
+2020,4,states,karnataka,22400182
+2020,4,states,andhra pradesh,17076565
+2020,4,states,rajasthan,16329494
+2020,4,states,telangana,15927797
+2020,4,states,west bengal,15662093
+2020,4,states,tamil nadu,15357586
+2020,4,states,madhya pradesh,13737947
+2020,4,states,gujarat,13605203
+2020,4,districts,bengaluru urban,9286243
+2020,4,districts,pune,6033615
+2020,4,districts,thane,3727358
+2020,4,districts,jaipur,3679874
+2020,4,districts,mumbai suburban,3609970
+2020,4,districts,hyderabad,3142385
+2020,4,districts,ahmadabad,2787991
+2020,4,districts,rangareddy,2704868
+2020,4,districts,north twenty four parganas,2321888
+2020,4,districts,medchal malkajgiri,2282695
+2020,4,pincodes,201301,504506
+2020,4,pincodes,110059,423149
+2020,4,pincodes,560068,399638
+2020,4,pincodes,421302,365506
+2020,4,pincodes,500072,350832
+2020,4,pincodes,122001,336803
+2020,4,pincodes,110092,335783
+2020,4,pincodes,110086,288308
+2020,4,pincodes,560078,285544
+2020,4,pincodes,121004,283882
+2021,1,states,maharashtra,37077537
+2021,1,states,uttar pradesh,29482075
+2021,1,states,karnataka,24095832
+2021,1,states,andhra pradesh,18363733
+2021,1,states,rajasthan,17661088
+2021,1,states,telangana,17149069
+2021,1,states,west bengal,16808799
+2021,1,states,tamil nadu,16632608
+2021,1,states,madhya pradesh,14839427
+2021,1,states,gujarat,14670126
+2021,1,districts,bengaluru urban,9955387
+2021,1,districts,pune,6481971
+2021,1,districts,thane,4014464
+2021,1,districts,jaipur,3951866
+2021,1,districts,mumbai suburban,3886500
+2021,1,districts,hyderabad,3379663
+2021,1,districts,ahmadabad,2999575
+2021,1,districts,rangareddy,2906635
+2021,1,districts,north twenty four parganas,2491076
+2021,1,districts,surat,2458596
+2021,1,pincodes,201301,541127
+2021,1,pincodes,110059,454201
+2021,1,pincodes,560068,427525
+2021,1,pincodes,421302,396179
+2021,1,pincodes,500072,375272
+2021,1,pincodes,122001,361360
+2021,1,pincodes,110092,359376
+2021,1,pincodes,110086,310419
+2021,1,pincodes,121004,306230
+2021,1,pincodes,560078,305721
+2021,2,states,maharashtra,39664697
+2021,2,states,uttar pradesh,31651894
+2021,2,states,karnataka,25751023
+2021,2,states,andhra pradesh,19620905
+2021,2,states,rajasthan,18980985
+2021,2,states,telangana,18306880
+2021,2,states,west bengal,17979979
+2021,2,states,tamil nadu,17804542
+2021,2,states,madhya pradesh,15940935
+2021,2,states,gujarat,15735981
+2021,2,districts,bengaluru urban,10604609
+2021,2,districts,pune,6915820
+2021,2,districts,thane,4290066
+2021,2,districts,jaipur,4226231
+2021,2,districts,mumbai suburban,4151227
+2021,2,districts,hyderabad,3598337
+2021,2,districts,ahmadabad,3209841
+2021,2,districts,rangareddy,3097973
+2021,2,districts,north twenty four parganas,2660664
+2021,2,districts,surat,2633443
+2021,2,pincodes,201301,577428
+2021,2,pincodes,110059,485328
+2021,2,pincodes,560068,455417
+2021,2,pincodes,421302,424376
+2021,2,pincodes,500072,398987
+2021,2,pincodes,122001,385555
+2021,2,pincodes,110092,383095
+2021,2,pincodes,110086,332618
+2021,2,pincodes,121004,328000
+2021,2,pincodes,560078,325334
+2021,3,states,maharashtra,42581217
+2021,3,states,uttar pradesh,34151882
+2021,3,states,karnataka,27614221
+2021,3,states,andhra pradesh,21059898
+2021,3,states,rajasthan,20499465
+2021,3,states,telangana,19615278
+2021,3,states,west bengal,19323278
+2021,3,states,tamil nadu,19127440
+2021,3,states,madhya pradesh,17210233
+2021,3,states,gujarat,16946761
+2021,3,districts,bengaluru urban,11321012
+2021,3,districts,pune,7398336
+2021,3,districts,thane,4597394
+2021,3,districts,jaipur,4534297
+2021,3,districts,mumbai suburban,4444495
+2021,3,districts,hyderabad,3839513
+2021,3,districts,ahmadabad,3445024
+2021,3,districts,rangareddy,3310906
+2021,3,districts,north twenty four parganas,2852030
+2021,3,districts,surat,2830392
+2021,3,pincodes,201301,618043
+2021,3,pincodes,110059,520096
+2021,3,pincodes,560068,486170
+2021,3,pincodes,421302,456284
+2021,3,pincodes,500072,425197
+2021,3,pincodes,122001,412737
+2021,3,pincodes,110092,409520
+2021,3,pincodes,110086,357590
+2021,3,pincodes,121004,352312
+2021,3,pincodes,560078,346840
+2021,4,states,maharashtra,45482506
+2021,4,states,uttar pradesh,36617655
+2021,4,states,karnataka,29459646
+2021,4,states,andhra pradesh,22489029
+2021,4,states,rajasthan,21977202
+2021,4,states,telangana,20917649
+2021,4,states,west bengal,20644527
+2021,4,states,tamil nadu,20433142
+2021,4,states,madhya pradesh,18456243
+2021,4,states,gujarat,18139201
+2021,4,districts,bengaluru urban,12038775
+2021,4,districts,pune,7880431
+2021,4,districts,thane,4906492
+2021,4,districts,jaipur,4841883
+2021,4,districts,mumbai suburban,4740546
+2021,4,districts,hyderabad,4081185
+2021,4,districts,ahmadabad,3679243
+2021,4,districts,rangareddy,3523496
+2021,4,districts,north twenty four parganas,3043008
+2021,4,districts,surat,3026960
+2021,4,pincodes,201301,659549
+2021,4,pincodes,110059,555449
+2021,4,pincodes,560068,517115
+2021,4,pincodes,421302,488443
+2021,4,pincodes,500072,451595
+2021,4,pincodes,122001,440178
+2021,4,pincodes,110092,436075
+2021,4,pincodes,110086,382858
+2021,4,pincodes,121004,376910
+2021,4,pincodes,560078,368213
+2022,1,states,maharashtra,48227630
+2022,1,states,uttar pradesh,38999692
+2022,1,states,karnataka,31200349
+2022,1,states,andhra pradesh,23857951
+2022,1,states,rajasthan,23398857
+2022,1,states,telangana,22150612
+2022,1,states,west bengal,21919787
+2022,1,states,tamil nadu,21667020
+2022,1,states,madhya pradesh,19656147
+2022,1,states,gujarat,19265314
+2022,1,districts,bengaluru urban,12707664
+2022,1,districts,pune,8331582
+2022,1,districts,thane,5196050
+2022,1,districts,jaipur,5133527
+2022,1,districts,mumbai suburban,5017556
+2022,1,districts,hyderabad,4306136
+2022,1,districts,ahmadabad,3897869
+2022,1,districts,rangareddy,3722676
+2022,1,districts,north twenty four parganas,3224459
+2022,1,districts,surat,3210535
+2022,1,pincodes,201301,698600
+2022,1,pincodes,110059,588266
+2022,1,pincodes,560068,545827
+2022,1,pincodes,421302,518716
+2022,1,pincodes,500072,476073
+2022,1,pincodes,122001,465984
+2022,1,pincodes,110092,460951
+2022,1,pincodes,110086,406863
+2022,1,pincodes,121004,400283
+2022,1,pincodes,560078,388154
+2022,2,states,maharashtra,50802786
+2022,2,states,uttar pradesh,41247289
+2022,2,states,karnataka,32831447
+2022,2,states,andhra pradesh,25157264
+2022,2,states,rajasthan,24716181
+2022,2,states,telangana,23314363
+2022,2,states,west bengal,23124388
+2022,2,states,tamil nadu,22829720
+2022,2,states,madhya pradesh,20766417
+2022,2,states,gujarat,20321596
+2022,2,districts,bengaluru urban,13342916
+2022,2,districts,pune,8757249
+2022,2,districts,thane,5471749
+2022,2,districts,jaipur,5409763
+2022,2,districts,mumbai suburban,5281053
+2022,2,districts,hyderabad,4519625
+2022,2,districts,ahmadabad,4105172
+2022,2,districts,rangareddy,3911372
+2022,2,districts,north twenty four parganas,3397791
+2022,2,districts,surat,3385398
+2022,2,pincodes,201301,735907
+2022,2,pincodes,110059,619737
+2022,2,pincodes,560068,573310
+2022,2,pincodes,421302,547501
+2022,2,pincodes,500072,499269
+2022,2,pincodes,122001,490709
+2022,2,pincodes,110092,484816
+2022,2,pincodes,110086,429566
+2022,2,pincodes,121004,422488
+2022,2,pincodes,560078,407066
+2022,3,states,maharashtra,53432602
+2022,3,states,uttar pradesh,43537920
+2022,3,states,karnataka,34493994
+2022,3,states,andhra pradesh,26496330
+2022,3,states,rajasthan,26042948
+2022,3,states,telangana,24506111
+2022,3,states,west bengal,24372048
+2022,3,states,tamil nadu,24019964
+2022,3,states,madhya pradesh,21884220
+2022,3,states,gujarat,21394721
+2022,3,districts,bengaluru urban,13997602
+2022,3,districts,pune,9194074
+2022,3,districts,thane,5757165
+2022,3,districts,jaipur,5696726
+2022,3,districts,mumbai suburban,5555095
+2022,3,districts,hyderabad,4739891
+2022,3,districts,ahmadabad,4319512
+2022,3,districts,rangareddy,4105107
+2022,3,districts,north twenty four parganas,3578500
+2022,3,districts,surat,3567767
+2022,3,pincodes,201301,774591
+2022,3,pincodes,110059,652328
+2022,3,pincodes,560068,601656
+2022,3,pincodes,421302,577754
+2022,3,pincodes,500072,523196
+2022,3,pincodes,122001,516313
+2022,3,pincodes,110092,509260
+2022,3,pincodes,110086,453393
+2022,3,pincodes,121004,445822
+2022,3,pincodes,201009,428994
+2022,4,states,maharashtra,55954028
+2022,4,states,uttar pradesh,45648650
+2022,4,states,karnataka,36081698
+2022,4,states,andhra pradesh,27778016
+2022,4,states,rajasthan,27255927
+2022,4,states,telangana,25656381
+2022,4,states,west bengal,25536381
+2022,4,states,tamil nadu,25136112
+2022,4,states,madhya pradesh,22913924
+2022,4,states,gujarat,22412353
+2022,4,districts,bengaluru urban,14654455
+2022,4,districts,pune,9622338
+2022,4,districts,thane,6042267
+2022,4,districts,jaipur,5975863
+2022,4,districts,mumbai suburban,5831539
+2022,4,districts,hyderabad,4962214
+2022,4,districts,ahmadabad,4530853
+2022,4,districts,rangareddy,4296707
+2022,4,districts,north twenty four parganas,3755017
+2022,4,districts,surat,3747780
+2022,4,pincodes,201301,814008
+2022,4,pincodes,110059,685596
+2022,4,pincodes,560068,630255
+2022,4,pincodes,421302,608005
+2022,4,pincodes,500072,547282
+2022,4,pincodes,122001,542209
+2022,4,pincodes,110092,534009
+2022,4,pincodes,110086,477514
+2022,4,pincodes,121004,468607
+2022,4,pincodes,201009,451153
