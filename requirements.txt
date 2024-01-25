@@ -1,9 +1,9 @@
 pandas
 numpy
 SQLAlchemy
-extra_streamlit_components~=0.1.3
+extra_streamlit_components
 streamlit
-streamlit-shadcn-ui>=0.1.18
+streamlit-shadcn-ui
 streamlit_extras
 streamlit-pandas-profiling
-ipykernal
+plotly
