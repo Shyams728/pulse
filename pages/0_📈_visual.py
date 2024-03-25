@@ -8,6 +8,7 @@ import streamlit_shadcn_ui as ui
 st.set_page_config(
     page_title="Visualisation",
     layout="wide",
+    initial_sidebar_state = "collapsed",
     page_icon=":graph:",
 )
 
@@ -64,7 +65,7 @@ agg_df = df.groupby(["state", "year"]).agg({
 # Display metrics in two columns
 cols = st.columns(2)
 with cols[0]:
-    ui.metric_card(title="Total Insurence Amount ", content=f"₹{df.total_amount.sum()}", description="Total insurence amount from state transactions", key="card1")
+    ui.metric_card(title="Total Insurence Amount", content=f"₹{df.total_amount.sum()}", description="Total insurence amount from state transactions", key="card1")
 with cols[1]:
     ui.metric_card(title="Total Number of Transactions", content=f"{df.number_of_transactions.sum()}", description="Total Number of Transactions from state insurence", key="card2")
 # st.markdown('---')

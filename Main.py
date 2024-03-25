@@ -8,6 +8,7 @@ import streamlit_shadcn_ui as ui
 st.set_page_config(
     page_title="Visualisation",
     layout="wide",
+    initial_sidebar_state = "collapsed",
     page_icon=":graph:",
 )
 
