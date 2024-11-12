@@ -22,8 +22,6 @@ def load_data_from_db(query):
 
 
 
-
-
 # # Fetch data from SQLite based on user selection from dropdown
 # dropdown_options = {
 #     '---': None,
@@ -167,6 +165,8 @@ charts= st.container(border=True)
 charts.write("Total transaction proportion by year")
 charts.plotly_chart(fig2, theme="streamlit", use_container_width=True)
 charts.header('container check')
+
+
 
 
 # Showing metric data
