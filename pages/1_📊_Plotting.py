@@ -1,4 +1,3 @@
-import extra_streamlit_components as stx
 import streamlit as st
 import streamlit_shadcn_ui as ui
 from sqlalchemy import create_engine
@@ -9,7 +8,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state='collapsed',
     page_title="📈 Tables",
-    page_icon= ':chart:'  
+    page_icon=':chart:'
 )
 
 st.title("📈 Tables")
@@ -38,7 +37,7 @@ def select_the_table(selected_tab):
 
 # ***************************************Data Exploration*******************************
 
-first_box = st.container(border=True)
+first_box = st.container()
 col1, col2 = first_box.columns([7, 1])
 
 with col1:
@@ -57,7 +56,7 @@ else:
     
     filtered_df = None
 
-    filter_box = st.container(border=True)
+    filter_box = st.container()
 
 if filter_data:
     # Create columns
@@ -70,7 +69,7 @@ if filter_data:
 
     # Check if 'state' is a column in the DataFrame
     if 'state' in df.columns:
-        selected_state = col5.multiselect('Select State/UT:', sorted(df['state'].unique()), default= ['karnataka'])
+        selected_state = col5.multiselect('Select State/UT:', sorted(df['state'].unique()), default=['karnataka'])
         
         if 'type_of_transaction' in df.columns:
             entity_type = col6.multiselect('Select Transaction Type:', sorted(df['type_of_transaction'].unique()))
@@ -102,85 +101,315 @@ else:
     filtered_df = df
     with st.expander('Show Full Data'):
         st.dataframe(df, use_container_width=True)
+        
+if selected_tab == 'User Country Data':
+    # Aggregate data by year and phone brand 
+    agg_df = df.groupby(["year",'phone_brand']).agg({
+        "phone_count": "sum",
+        "Percentage": "sum"
+    }).reset_index()
+    data = agg_df
+else:
+    data = filtered_df.head()    
+
+ui.table(data=data, maxHeight=500, key="filtered_data_table")
+
+# ***************************************Charts*******************************
+
+if selected_tab == 'Transaction State Data':
+    # Bar chart for total transaction count by state and type of transaction
+    fig1 = px.bar(
+        filtered_df,
+        x="state",
+        y="number_of_transactions",
+        color="type_of_transaction",
+        barmode="group",
+        title="Total Transaction Count by State and Type of Transaction",
+        labels={"number_of_transactions": "Total Transaction Count", "state": "State", "type_of_transaction": "Type of Transaction"}
+    )
+    st.plotly_chart(fig1, use_container_width=True)
+
+    # Bar chart for total transaction amount by state and type of transaction
+    fig2 = px.bar(
+        filtered_df,
+        x="state",
+        y="total_amount",
+        color="type_of_transaction",
+        barmode="group",
+        title="Total Transaction Amount by State and Type of Transaction",
+        labels={"total_amount": "Total Transaction Amount", "state": "State", "type_of_transaction": "Type of Transaction"}
+    )
+    st.plotly_chart(fig2, use_container_width=True)
+
+    # Line chart for transaction count over time by state and type of transaction
+    fig3 = px.line(
+        filtered_df,
+        x="quarter",
+        y="number_of_transactions",
+        color="state",
+        line_dash="type_of_transaction",
+        title="Transaction Count Over Time by State and Type of Transaction",
+        labels={"number_of_transactions": "Transaction Count", "quarter": "Quarter", "state": "State", "type_of_transaction": "Type of Transaction"},
+        facet_col="year",
+        facet_col_wrap=2
+    )
+    st.plotly_chart(fig3, use_container_width=True)
+
+    # Line chart for transaction amount over time by state and type of transaction
+    fig4 = px.line(
+        filtered_df,
+        x="quarter",
+        y="total_amount",
+        color="state",
+        line_dash="type_of_transaction",
+        title="Transaction Amount Over Time by State and Type of Transaction",
+        labels={"total_amount": "Transaction Amount", "quarter": "Quarter", "state": "State", "type_of_transaction": "Type of Transaction"},
+        facet_col="year",
+        facet_col_wrap=2
+    )
+    st.plotly_chart(fig4, use_container_width=True)
+
+    # Treemap for transaction distribution by state, year, and type of transaction
+    fig5 = px.treemap(
+        filtered_df,
+        path=["state", "year", "type_of_transaction"],
+        values="number_of_transactions",
+        title="Transaction Distribution by State, Year, and Type of Transaction",
+        labels={"number_of_transactions": "Transaction Count", "state": "State", "type_of_transaction": "Type of Transaction"}
+    )
+    st.plotly_chart(fig5, use_container_width=True)
+
+    # Treemap for transaction amount distribution by state, year, and type of transaction
+    fig6 = px.treemap(
+        filtered_df,
+        path=["state", "year", "type_of_transaction"],
+        values="total_amount",
+        title="Transaction Amount Distribution by State, Year, and Type of Transaction",
+        labels={"total_amount": "Transaction Amount", "state": "State", "type_of_transaction": "Type of Transaction"}
+    )
+    st.plotly_chart(fig6, use_container_width=True)
+
+    # Scatter plot for transaction count vs. amount by state and type of transaction
+    fig7 = px.scatter(
+        filtered_df,
+        x="number_of_transactions",
+        y="total_amount",
+        color="state",
+        symbol="type_of_transaction",
+        title="Transaction Count vs. Amount by State and Type of Transaction",
+        labels={"number_of_transactions": "Transaction Count", "total_amount": "Transaction Amount", "state": "State", "type_of_transaction": "Type of Transaction"}
+    )
+    st.plotly_chart(fig7, use_container_width=True)
+
+    # Sunburst chart for transaction distribution by state, year, quarter, and type of transaction
+    fig8 = px.sunburst(
+        filtered_df,
+        path=["state", "year", "quarter", "type_of_transaction"],
+        values="number_of_transactions",
+        title="Transaction Distribution by State, Year, Quarter, and Type of Transaction",
+        labels={"number_of_transactions": "Transaction Count", "state": "State", "type_of_transaction": "Type of Transaction"}
+    )
+    st.plotly_chart(fig8, use_container_width=True)
+
+elif selected_tab == 'Insurance Data':
+    # Bar chart for total insurance transaction count by year and quarter
+    fig1 = px.bar(
+        filtered_df,
+        x="year",
+        y="count",
+        color="quarter",
+        barmode="group",
+        title="Total Insurance Transaction Count by Year and Quarter",
+        labels={"count": "Total Transaction Count", "year": "Year", "quarter": "Quarter"}
+    )
+    st.plotly_chart(fig1, use_container_width=True)
+
+    # Bar chart for total insurance transaction amount by year and quarter
+    fig2 = px.bar(
+        filtered_df,
+        x="year",
+        y="amount",
+        color="quarter",
+        barmode="group",
+        title="Total Insurance Transaction Amount by Year and Quarter",
+        labels={"amount": "Total Transaction Amount", "year": "Year", "quarter": "Quarter"}
+    )
+    st.plotly_chart(fig2, use_container_width=True)
+
+    # Line chart for insurance transaction count over time
+    fig3 = px.line(
+        filtered_df,
+        x="quarter",
+        y="count",
+        color="year",
+        title="Insurance Transaction Count Over Time",
+        labels={"count": "Transaction Count", "quarter": "Quarter", "year": "Year"}
+    )
+    st.plotly_chart(fig3, use_container_width=True)
+
+    # Line chart for insurance transaction amount over time
+    fig4 = px.line(
+        filtered_df,
+        x="quarter",
+        y="amount",
+        color="year",
+        title="Insurance Transaction Amount Over Time",
+        labels={"amount": "Transaction Amount", "quarter": "Quarter", "year": "Year"}
+    )
+    st.plotly_chart(fig4, use_container_width=True)
+
+    # Treemap for insurance transaction distribution by year and quarter
+    fig5 = px.treemap(
+        filtered_df,
+        path=["year", "quarter"],
+        values="count",
+        title="Insurance Transaction Distribution by Year and Quarter",
+        labels={"count": "Transaction Count", "year": "Year", "quarter": "Quarter"}
+    )
+    st.plotly_chart(fig5, use_container_width=True)
+
+    # Treemap for insurance transaction amount distribution by year and quarter
+    fig6 = px.treemap(
+        filtered_df,
+        path=["year", "quarter"],
+        values="amount",
+        title="Insurance Transaction Amount Distribution by Year and Quarter",
+        labels={"amount": "Transaction Amount", "year": "Year", "quarter": "Quarter"}
+    )
+    st.plotly_chart(fig6, use_container_width=True)
+
+    # Scatter plot for insurance transaction count vs. amount
+    fig7 = px.scatter(
+        filtered_df,
+        x="count",
+        y="amount",
+        color="year",
+        symbol="quarter",
+        title="Insurance Transaction Count vs. Amount",
+        labels={"count": "Transaction Count", "amount": "Transaction Amount", "year": "Year", "quarter": "Quarter"}
+    )
+    st.plotly_chart(fig7, use_container_width=True)
+
+    # Sunburst chart for insurance transaction distribution by year, quarter, and type of transaction
+    fig8 = px.sunburst(
+        filtered_df,
+        path=["year", "quarter", "type_of_transaction"],
+        values="count",
+        title="Insurance Transaction Distribution by Year, Quarter, and Type of Transaction",
+        labels={"count": "Transaction Count", "year": "Year", "quarter": "Quarter", "type_of_transaction": "Type of Transaction"}
+    )
+    st.plotly_chart(fig8, use_container_width=True)
+
+
+if selected_tab == "Insurance State Data":
+    st.subheader("Insurance Transactions Overview")
     
-ui.table(data=filtered_df.head(), maxHeight=500, key="filtered_data_table")
+    # Plot 1: Number of Transactions by Quarter
+    st.write("### Number of Transactions by Quarter")
+    fig1 = px.bar(filtered_df, x='quarter', y='number_of_transactions', 
+                  labels={'quarter': 'Quarter', 'number_of_transactions': 'Number of Transactions'},
+                  title=f"Number of Insurance Transactions")
+    st.plotly_chart(fig1)
+    
+    # Plot 2: Total Amount by Quarter
+    st.write("### Total Amount by Quarter")
+    fig2 = px.line(filtered_df, x='quarter', y='total_amount', 
+                   labels={'quarter': 'Quarter', 'total_amount': 'Total Amount'},
+                   title=f"Total Amount of Insurance Transactions")
+    st.plotly_chart(fig2)
+    
+    # Plot 3: Combined View (Number of Transactions and Total Amount)
+    st.write("### Combined View: Number of Transactions and Total Amount")
+    fig3 = px.scatter(filtered_df, x='number_of_transactions', y='total_amount', color='quarter',
+                      labels={'number_of_transactions': 'Number of Transactions', 'total_amount': 'Total Amount'},
+                      title=f"Combined View of Insurance Transactions")
+    st.plotly_chart(fig3)
+# else:
+#     # Bar chart for total transaction count by category
+#     fig1 = px.bar(
+#         filtered_df,
+#         x="name",
+#         y="count",
+#         title="Total Transaction Count by Category",
+#         labels={"count": "Total Transaction Count", "name": "Category"}
+#     )
+#     st.plotly_chart(fig1, use_container_width=True)
 
+#     # Bar chart for total transaction amount by category
+#     fig2 = px.bar(
+#         filtered_df,
+#         x="name",
+#         y="amount",
+#         title="Total Transaction Amount by Category",
+#         labels={"amount": "Total Transaction Amount", "name": "Category"}
+#     )
+#     st.plotly_chart(fig2, use_container_width=True)
 
+#     # Line chart for transaction count over time
+#     fig3 = px.line(
+#         filtered_df,
+#         x="quarter",
+#         y="count",
+#         color="name",
+#         line_dash="name",
+#         title="Transaction Count Over Time by Category",
+#         labels={"count": "Transaction Count", "quarter": "Quarter", "name": "Category"},
+#         facet_col="year",
+#         facet_col_wrap=2
+#     )
+#     st.plotly_chart(fig3, use_container_width=True)
 
-a,b = st.tabs( ["Chart", "Table"])
-with a:
-    st.subheader("Chart")
-with b:
-    st.subheader("Table")
-    st.selectbox("Select", [1, 2, 3])
+#     # Line chart for transaction amount over time
+#     fig4 = px.line(
+#         filtered_df,
+#         x="quarter",
+#         y="amount",
+#         color="name",
+#         line_dash="name",
+#         title="Transaction Amount Over Time by Category",
+#         labels={"amount": "Transaction Amount", "quarter": "Quarter", "name": "Category"},
+#         facet_col="year",
+#         facet_col_wrap=2
+#     )
+#     st.plotly_chart(fig4, use_container_width=True)
 
-    if 1:
-        st.text('sample metric data')
-        col1, col2, col3 = st.columns(3)
-        col1.metric("Temperature", "70 °F", "1.2 °F")
-        col2.metric("Wind", "9 mph", "-8%")
-        col3.metric("Humidity", "86%", "4%")
-    if 2:
-        options = st.multiselect(
-            'What are your favorite colors',
-            ['Green', 'Yellow', 'Red', 'Blue'],
-            ['Yellow', 'Red'])
+#     # Treemap for transaction distribution by category and year
+#     fig5 = px.treemap(
+#         filtered_df,
+#         path=["year", "name"],
+#         values="count",
+#         title="Transaction Distribution by Category and Year",
+#         labels={"count": "Transaction Count", "name": "Category"}
+#     )
+#     st.plotly_chart(fig5, use_container_width=True)
 
-        st.write('You selected:', options)
+#     # Treemap for transaction amount distribution by category and year
+#     fig6 = px.treemap(
+#         filtered_df,
+#         path=["year", "name"],
+#         values="amount",
+#         title="Transaction Amount Distribution by Category and Year",
+#         labels={"amount": "Transaction Amount", "name": "Category"}
+#     )
+#     st.plotly_chart(fig6, use_container_width=True)
 
+#     # Scatter plot for transaction count vs. amount
+#     fig7 = px.scatter(
+#         filtered_df,
+#         x="count",
+#         y="amount",
+#         color="name",
+#         title="Transaction Count vs. Amount by Category",
+#         labels={"count": "Transaction Count", "amount": "Transaction Amount", "name": "Category"}
+#     )
+#     st.plotly_chart(fig7, use_container_width=True)
 
-st.subheader('expander')
-
-st.bar_chart({"data": [1, 5, 2, 6, 2, 1]})
-
-expander = st.expander("See explanation")
-expander.write('''
-    The chart above shows some numbers I picked for you.
-    I rolled actual dice for these, so they're *guaranteed* to
-    be random.
-''')
-expander.image("https://static.streamlit.io/examples/dice.jpg")
-
-
-st.subheader("Container")
-
-container = st.container(border=True)
-container.write("This is inside the container")
-container.header('container check')
-container.write('container check')
-st.write("This is outside the container")
-
-# Now insert some more in the container
-container.write("This is inside too")
-
-
-st.subheader("Metric Card")
-
-cols = st.columns(3)
-with cols[0]:
-    ui.metric_card(title="Total Revenue", content="$45,231.89", description="+20.1% from last month", key="card1")
-with cols[1]:
-    ui.metric_card(title="Total Revenue", content="$45,231.89", description="+20.1% from last month", key="card2")
-with cols[2]:
-    ui.metric_card(title="Total Revenue", content="$45,231.89", description="+20.1% from last month", key="card3")
-
-st.subheader("Tab Bar")
-
-chosen_id = stx.tab_bar(data=[
-    stx.TabBarItemData(id='smile', title="ToDo", description="Tasks to take care of"),
-    stx.TabBarItemData(id=2, title="Done", description="Tasks taken care of"),
-    stx.TabBarItemData(id=3, title="Overdue", description="Tasks missed out"),
-], default=1)
-st.info(f"{chosen_id=}")
-
-if chosen_id == 'smile':
-    st.write("ToDo")
-if chosen_id == '2':
-    st.write("Done")
-if chosen_id == '3':
-    st.write("Overdue")
-
-
-val = stx.stepper_bar(steps=["Ready", "Get Set", "Go"])
-st.info(f"Phase #{val}")
-stx.TabBar(data = ['total revenue','state revenue'], default=None, return_type=str, key=None)
+#     # Sunburst chart for transaction distribution by year, quarter, and category
+#     fig8 = px.sunburst(
+#         filtered_df,
+#         path=["year", "quarter", "name"],
+#         values="count",
+#         title="Transaction Distribution by Year, Quarter, and Category",
+#         labels={"count": "Transaction Count", "name": "Category"}
+#     )
+#     st.plotly_chart(fig8, use_container_width=True)
